@@ -1,0 +1,15 @@
+#include <iostream>
+
+int main()
+{
+	std::cout << "Enter base and exponent: ";
+	int exp, base;
+	std::cin >> base >> exp;
+	int fin{ base }, a{base};
+	for (int i{ 1 }; i < exp; ++i)
+	{
+		fin *= a;
+	}
+	std::cout << "Final number is: " << fin;
+	return 0;
+}
